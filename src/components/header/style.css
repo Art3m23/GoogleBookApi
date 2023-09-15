@@ -1,0 +1,251 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  font-family: 'Paytone One';
+  background-image: url(../../../public/images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fce4e4;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.searchContainer {
+  display: flex;
+  margin: 20px 0 20px 0;
+}
+
+.container h2 {
+  font-size: 48px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container .submit-button {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border-radius: 50%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 1px solid white;
+  background-color: #000;
+  opacity: 0.8;
+  cursor: pointer;
+  background-image: url(../../../public/images/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 44px;
+}
+
+.searchLogo {
+  width: 30px;
+  height: 30px;
+}
+
+.selectContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 820px;
+}
+
+.container .searchTerm {
+  width: 400px;
+  height: 50px;
+  padding: 15px;
+  border-radius: 30px 0 0 30px;
+  border: 1px solid white;
+  border-right: 0;
+  font-size: large;
+  color: #FFF;
+  background-color: #000;
+  opacity: 0.8;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: url(../../../public/images/cross.svg);
+  cursor: pointer;
+}
+
+.container input:focus {
+  outline: none;
+}
+
+.container input::placeholder {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 18px;
+  color: #FFF;
+}
+
+.category,
+.sort {
+  width: 200px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 5px;
+  font-family: 'Paytone One', sans-serif;
+  font-size: large;
+  color: #FFF;
+  background-color: #000;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.category:focus,
+.sort:focus {
+  outline: none;
+}
+
+label[for="category"],
+label[for="sort"] {
+  font-size: 24px;
+}
+
+@media (max-width: 830px) {
+
+  .selectContainer {
+    width: 720px;
+  }
+
+}
+
+@media (max-width: 729px) {
+  .selectContainer {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    width: auto;
+  }
+
+  label[for="category"],
+  label[for="sort"] {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 649px) {
+  .container h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  label[for="category"],
+  label[for="sort"] {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 499px) {
+
+  .selectContainer {
+    height: 100px;
+  }
+
+  .category,
+  .sort {
+    font-size: medium;
+  }
+
+  .searchContainer {
+    width: 300px;
+  }
+
+  .container .searchTerm {
+    width: 320px;
+    height: 30px;
+  }
+
+  .container .submit-button {
+    width: 30px;
+    height: 32px;
+  }
+
+  .container input {
+    width: 300px;
+    height: 30px;
+    font-size: medium;
+  }
+
+  .container button {
+    width: 35px;
+    height: 32px;
+  }
+
+  .searchLogo {
+    width: 25px;
+    height: 25px;
+  }
+
+  .container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .container input::placeholder {
+    font-size: medium;
+  }
+
+  label[for="category"],
+  label[for="sort"] {
+    font-size: 16px;
+  }
+
+  .container .submit-button {
+    background-size: 24px;
+  }
+}
+
+@media (max-width: 360px) {
+  .selectContainer {
+    height: 80px;
+  }
+
+  .category,
+  .sort {
+    width: 150px;
+    height: 30px;
+    font-size: small;
+  }
+
+  .searchContainer {
+    width: 288px;
+  }
+
+  .container input {
+    width: 288px;
+    height: 20px;
+    font-size: small;
+  }
+
+  .container button {
+    width: 25px;
+    height: 22px;
+  }
+
+  .searchLogo {
+    width: 20px;
+    height: 20px;
+  }
+
+  .container h2 {
+    font-size: 18px;
+  }
+
+  .container input::placeholder {
+    font-size: small;
+  }
+}
