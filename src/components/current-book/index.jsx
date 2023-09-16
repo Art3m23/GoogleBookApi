@@ -36,7 +36,7 @@ function CurrentBook() {
   const handleClick = () => {
     navigate(`/books/${!searchOptions.category?'all':searchOptions.category}`);
   };
-  console.log(searchOptions)
+  
   return (
     <>
       {loader ?error?<p>Something went wrong. Reload the page</p>: <Loader /> : <section className='current-book-container'>
