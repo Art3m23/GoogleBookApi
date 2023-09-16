@@ -27,7 +27,7 @@ function BooksPage() {
     e.preventDefault();
     dispatch(getMoreBooks({ ...searchOptions, startIndex: searchOptions.startIndex + MAX_RESULTS }));
   }
-  console.log(books)
+  
   return (
     <>
       <Header initialValues={INITIAL_VALUES} />
